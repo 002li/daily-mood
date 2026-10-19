@@ -101,4 +101,3 @@ Android 包名为 `com.moodplanet.daily`，应用显示名称仍为 `Mood`，开
 - [历史开发记录](docs/development-history.md)：阶段性记录可能包含旧功能描述，以本页和当前源码为准。
 
 项目尚未添加开源许可证。第三方依赖遵循各自许可证。
-

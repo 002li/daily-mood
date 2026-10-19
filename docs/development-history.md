@@ -482,4 +482,3 @@ docs/art-direction.md          美术参考、修改建议与统一验收清单
 - [Expo SDK 57 AsyncStorage](https://docs.expo.dev/versions/v57.0.0/sdk/async-storage/)
 - [Expo SDK 57 渐变](https://docs.expo.dev/versions/v57.0.0/sdk/linear-gradient/)
 - [Expo SDK 57 触觉反馈](https://docs.expo.dev/versions/v57.0.0/sdk/haptics/)
-

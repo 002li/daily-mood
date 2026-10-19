@@ -216,4 +216,3 @@ export function LiuliWeatherEffects({ mood, size, enabled, reduceMotion }: Props
 }
 
 const styles = StyleSheet.create({ clip: { position: 'absolute', top: 0, left: 0, overflow: 'hidden' } });
-
