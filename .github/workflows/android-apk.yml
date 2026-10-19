@@ -44,8 +44,10 @@ jobs:
 
       - name: Install Android SDK components
         run: |
-          sdkmanager --licenses < <(printf 'y\n%.0s' {1..100}) > /dev/null
-          sdkmanager 'platforms;android-36' 'build-tools;36.0.0' 'ndk;27.1.12297006' 'cmake;3.22.1'
+          sdk_manager="${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager"
+          test -x "$sdk_manager"
+          "$sdk_manager" --licenses < <(printf 'y\n%.0s' {1..100}) > /dev/null
+          "$sdk_manager" 'platforms;android-36' 'build-tools;36.0.0' 'ndk;27.1.12297006' 'cmake;3.22.1'
 
       - name: Disable generated debug signing
         run: |
