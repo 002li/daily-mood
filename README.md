@@ -71,7 +71,7 @@ npx expo export --platform android --output-dir dist/android
 npx eas-cli build --platform android --profile preview
 ```
 
-这条命令会上传构建源码到 Expo，并使用相应账户的构建服务；本项目本轮采用本地构建。没有设置自动发布或云构建触发器。可参考 [Expo APK 构建说明](https://docs.expo.dev/build-reference/apk/) 和 [本地发布构建说明](https://docs.expo.dev/guides/local-app-production/)。
+这条命令会上传构建源码到 Expo，并使用相应账户的构建服务。本轮采用已确认的 GitHub Actions 编译、本地签名流程。仓库的 [Build Android APK](https://github.com/002li/daily-mood/actions/workflows/android-apk.yml) 只允许手动触发，运行检查并生成未签名的双 ARM 架构 APK；工作流不使用签名私钥，也不自动发布 Release。下载未签名产物后仍需本地签名才能安装。可参考 [Expo APK 构建说明](https://docs.expo.dev/build-reference/apk/) 和 [本地发布构建说明](https://docs.expo.dev/guides/local-app-production/)。
 
 ## 代码结构
 

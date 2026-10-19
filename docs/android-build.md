@@ -4,11 +4,17 @@
 
 ## 当前状态
 
-APK 正在本地构建。完成后在此记录真实文件、架构、SHA-256 和签名核验结果。现有 74 项测试、类型检查及 Web/Android JavaScript 导出不能替代 APK 或真机验证。
+APK 正在构建。本机首次依赖下载较慢，项目所有者已确认改用 GitHub Actions 的标准 Linux 环境编译，再下载到本地签名。完成后在此记录真实文件、架构、SHA-256 和签名核验结果。现有 74 项测试、类型检查及 Web/Android JavaScript 导出不能替代 APK 或真机验证。
+
+## 手动 GitHub Actions 构建
+
+打开仓库 Actions 中的 `Build Android APK`，手动执行 `Run workflow`。工作流只读源码，运行类型检查和测试，使用 Java 17 及对应 Android SDK 编译；动作版本固定到已核对的官方提交。没有 push、定时触发或自动发布，也不使用签名私钥。
+
+成功产物为 `mood-android-unsigned`，保留 7 天。它是未签名 APK，不能直接当作可安装版分发；下载后按下文对齐、签名并验证。最终签名包另行放入 Release。工作流文件为 `.github/workflows/android-apk.yml`。
 
 ## 构建环境
 
-本轮使用 Windows、Node.js 22、Microsoft OpenJDK 21，以及 Google Android SDK。工具放在项目专用的英文构建目录中，没有改系统 PATH、全局 Java 或系统代理。
+本地准备使用 Windows、Node.js 22、Microsoft OpenJDK 21 启动 Gradle，Java 17 作为插件编译工具链，以及 Google Android SDK。工具放在项目专用的英文构建目录中，没有改系统 PATH、全局 Java 或系统代理。下列工具同时用于下载产物后的本地核验和签名。
 
 - Android SDK Platform 36 / Build Tools 36.0.0
 - NDK 27.1.12297006 / CMake 3.22.1
