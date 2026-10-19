@@ -4,7 +4,16 @@
 
 ## 当前状态
 
-APK 正在构建。本机首次依赖下载较慢，项目所有者已确认改用 GitHub Actions 的标准 Linux 环境编译，再下载到本地签名。完成后在此记录真实文件、架构、SHA-256 和签名核验结果。现有 74 项测试、类型检查及 Web/Android JavaScript 导出不能替代 APK 或真机验证。
+2026-10-19 已完成 GitHub Actions 原生 Release 编译、本地签名与产物核验。[成功构建记录](https://github.com/002li/daily-mood/actions/runs/39272318253)，对应源码提交 `f5e614f84141d715870ee6174bade9f3d6c3fd42`；后续 README 修改不影响这份构建源码。
+
+- 安装包：[Mood-0.1.0.apk](https://github.com/002li/daily-mood/releases/download/v0.1.0/Mood-0.1.0.apk)，43,330,511 字节（约 43.3 MB）。本地副本位于 `releases/Mood-0.1.0.apk`。
+- 最低 Android 7.0 / API 24，target SDK 36；架构 `arm64-v8a`、`armeabi-v7a`。
+- SHA-256：`acbe70963f1c2da576b738e4147e253e4d5bd63be1d4cdf83347bf2d5ebd6b9c`。
+- 签名证书 SHA-256：`4311256e166e3f26843989a26b762ec8b30fe788a29fbf38d1e075e6e742fac2`。APK v2/v3 签名及 ZIP 16 KB 对齐检查通过，非 debuggable。
+- 清单、DEX、内置 Hermes JS bundle 与双 ARM 原生库检查通过。图集被 Android 资源优化为 `res/8Q.png`，已核对尺寸、透明通道及黑/白底合成像素与原图一致。
+- 实际权限仅包含网络、振动及包内动态接收器保护权限；没有外部存储或悬浮窗权限。
+
+类型检查和 74 项测试在云端通过。**尚未经过 Android 真机安装运行验收**，构建和签名检查不能代替下方真机清单。发布为测试版，见 [Release](https://github.com/002li/daily-mood/releases/tag/v0.1.0)。
 
 ## 手动 GitHub Actions 构建
 
@@ -40,7 +49,7 @@ Expo SDK 57 的 Prebuild 默认重新生成原生工程，`--no-clean` 可复用
 
 在 Windows 上建议把构建副本及 SDK 放在英文短路径下。若本机 Node 的目录复制遇到 Access denied，可将 `node_modules/expo/template.tgz` 的 `package/android` 解压到构建副本的 `android/`，再执行 `npx expo prebuild --platform android --no-install --no-clean` 应用配置；不要覆盖手写的原生工程。
 
-生成工程默认可能用开发调试证书签名 Release，不能把它当作正式签名。当前产物将先移除生成工程 Release 中的 `signingConfig signingConfigs.debug`，构建 unsigned Release，再用本地独立证书签名：
+生成工程默认可能用开发调试证书签名 Release，不能把它当作正式签名。当前产物先移除生成工程 Release 中的 `signingConfig signingConfigs.debug`，构建 unsigned Release，再用本地独立证书签名：
 
 ```powershell
 cd android
@@ -58,7 +67,7 @@ aapt dump badging Mood-0.1.0.apk
 
 ## 签名与更新
 
-本轮签名材料保留在工作区被 Git 忽略的 `.codex-tmp/apk-signing/`，不会上传 GitHub。请单独妥善备份密钥及其密码；后续覆盖更新需要使用相同包名和证书，并递增 versionCode。
+本轮签名材料保留在工作区被 Git 忽略的 `.signing/`，不会上传 GitHub，也不应当作缓存清理。请单独妥善备份密钥及其密码；后续覆盖更新需要使用相同包名和证书，并递增 versionCode。
 
 公开仓库不包含签名密钥、密码、本地 SDK、依赖缓存或 APK。安装包应作为 GitHub Release 附件发布，并附 SHA-256。自行重新打包的证书若不同，不能直接覆盖此 APK。
 

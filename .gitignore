@@ -15,6 +15,7 @@ dist/
 *.aab
 credentials.json
 /releases/
+/.signing/
 
 # 本地环境配置、日志和系统文件。
 .env*.local

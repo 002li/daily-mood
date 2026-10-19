@@ -25,11 +25,13 @@
 
 ## 安装 Android 版本
 
-安装包将放在本仓库的 [Releases](https://github.com/002li/daily-mood/releases)，不放进源代码 Git 历史。当前 APK 构建与核验完成后会补充版本、架构、校验值和下载链接。
+**[下载 Mood 0.1.0 测试版 APK](https://github.com/002li/daily-mood/releases/download/v0.1.0/Mood-0.1.0.apk)** · 约 43.3 MB · Android 7.0（API 24）及以上 · ARM64 / ARMv7。
+
+[发布说明](https://github.com/002li/daily-mood/releases/tag/v0.1.0) · [SHA-256 校验文件](https://github.com/002li/daily-mood/releases/download/v0.1.0/SHA256SUMS.txt)。安装包通过 GitHub Actions 编译，在本地签名，不放进源代码 Git 历史。
 
 独立安装包会内置 JavaScript 和图片素材，无需运行 Metro 或连接这台电脑。安装文件前请核对发布说明；系统可能要求为下载该文件的应用临时允许安装来源。
 
-**验证边界**：Web 检查及 Android JavaScript 导出已通过；APK 构建、签名核验与真机运行是不同检查。真实手机的键盘、返回键、后台恢复、存储和帧率仍待验收。
+**验证边界**：类型检查、74 项测试、Web 检查、Android Release 编译及 APK 签名/对齐核验已通过；内置 JS、星球图集和双 ARM 原生库已检查。尚未在真实手机安装运行，键盘、返回键、后台恢复、存储和帧率仍待验收。
 
 ## 本地开发
 
