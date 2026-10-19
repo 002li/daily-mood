@@ -1,0 +1,29 @@
+# 依赖与 Expo 本地缓存。
+node_modules/
+.expo/
+.codex-tmp/
+dist/
+
+# 构建生成的原生目录与签名材料。
+/android/
+/ios/
+*.jks
+*.keystore
+*.p12
+*.mobileprovision
+*.apk
+*.aab
+credentials.json
+/releases/
+
+# 本地环境配置、日志和系统文件。
+.env*.local
+.env
+.env.*
+!.env.example
+local.properties
+*.log
+npm-debug.*
+*.tsbuildinfo
+.DS_Store
+Thumbs.db

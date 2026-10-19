@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Mood",
+    "slug": "app",
+    "version": "0.1.0",
+    "platforms": ["android", "web"],
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "web": {
+      "bundler": "metro"
+    },
+    "android": {
+      "package": "com.moodplanet.daily",
+      "versionCode": 1,
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "predictiveBackGestureEnabled": false
+    }
+  }
+}

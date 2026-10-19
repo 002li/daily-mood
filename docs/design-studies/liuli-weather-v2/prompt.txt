@@ -1,0 +1,22 @@
+Use case: ui-mockup / stylized-concept comparison board.
+The supplied image is a STYLE AND MATERIAL REFERENCE ONLY: the approved jade liuli miniature planet. Keep its handcrafted translucent glass, layered rounded hills, winding river, simple three pine trees and milky cloud material. The task is to make moods MUCH MORE IMMEDIATELY READABLE through large weather symbols and distinct colors, rather than subtle scenery variations.
+
+Create ONE PORTRAIT comparison sheet, ideally 1024x1536, with EXACTLY FIVE equally sized mood planets and EXACTLY FIVE Chinese labels. Use a spacious TWO-COLUMN, THREE-ROW layout: first row 开心 left, 平静 right; second row 低落 left, 生气 right; third row 疲惫 centered. Pale warm cream background, no dark backdrop, no phone frame, no cards, no dividers, no branding. Each full planet approximately 360-400px wide. Label directly below each planet in large clear dark-navy Chinese sans serif. All labels must be clearly readable on a phone. No other text.
+
+EXACT labels under the corresponding planets:
+"开心" — GOLDEN SUNNY WEATHER.
+"平静" — JADE GREEN STILL CLEAR WEATHER.
+"低落" — BLUE RAINY WEATHER.
+"生气" — CORAL RED THUNDER WEATHER.
+"疲惫" — LAVENDER MOON AND RESTING MIST.
+Render only the Chinese labels above, not the English descriptions. Do not add 普通, 充满动力 or any sixth mood. Do not add a second sample of the same mood.
+
+Shared planet structure: one full round miniature world with a few broad translucent glass landform planes, three small healthy stylized trees, a river, and clouds. All five have the SAME viewing angle, scale, silhouette and illustration quality. Rich but carefully placed handcrafted details; no blanket of microscopic gold or noisy grain. The readable WEATHER SYMBOL is the first visual cue; the glass world is the supporting setting. Show weather inside or immediately above each planet without obscuring its river or overlapping the label.
+
+1. 开心 / HAPPY: rich honey-gold and fresh warm yellow-green planet, a LARGE CLEAR ROUND SUN with short simple rays in its upper sky, open river valley and just one small side cloud. Sunshine should be unmistakable even in a small thumbnail. Warm cheerful glass glow; no face or character.
+2. 平静 / CALM: luminous jade and mint-green planet with broad smooth gently layered hills, a CLEAR LEVEL STILL WATER AREA in the foreground and a slender quietly winding river. Pale open sky, only a light thin cloud. Even soft light, no sun disc, no stars, no rain, no lightning. The large horizontal reflective water and quiet green world make the mood readable.
+3. 低落 / SAD: clearly BLUE and cornflower-blue glass planet. One large low soft BLUE-GRAY RAIN CLOUD across the upper part, with FIVE TO SEVEN LARGE CLEAR BLUE RAINDROPS and short downward rain streaks visibly falling onto the river and small concentric water ripples. The rain must be visibly raining, not bubbles or floating glass ornaments. Keep midtones luminous and a little cream inner glow, no nearly black globe. Rain is the dominant cue. Healthy intact trees, no broken world.
+4. 生气 / ANGRY: saturated but controlled CORAL RED / carnelian-orange glass planet, closer rounded hills and a compact river with tighter turns. A compressed reddish storm cloud in the upper sky and ONE CLEAR SMALL BRANCHED GOLDEN-WHITE LIGHTNING BOLT, with a few directional cloud curves suggesting tension. Lightning should be unmistakable but contained within the planet. No fire, volcano, lava, explosions or damaged trees. Red and thunder are the mood cue.
+5. 疲惫 / TIRED: luminous soft LAVENDER PURPLE / periwinkle planet with lower, horizontally settled hills and a slow wide river bend. A LARGE PEARL-CREAM CRESCENT MOON in its upper sky and one long LOW RESTING MILKY CLOUD with a softly visible horizontal mist band. A quiet moonlit resting world, distinct from rain. No rain, lightning or face. Purple and moon with soft resting cloud are the dominant cue; no dark gray muddy globe.
+
+Style: softly cartooned ILLUSTRATIVE 3D liuli, rounded clear shapes, thick translucent glass edges, painted highlights, controlled refraction, warm and tactile. Avoid photorealistic product photography, toy characters, stickers, cartoon faces, people, buildings, tiny unreadable weather symbols, generic five recolored copies, harsh neon, glitter everywhere, clutter and heavy blur. Large shape differences and weather symbolism must remain obvious at thumbnail size. All five full planets and their correct labels entirely inside the sheet, with even spacing.

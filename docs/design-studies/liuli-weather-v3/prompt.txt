@@ -1,0 +1,7 @@
+Use case: precise-object-edit / layout.
+The supplied image is the EDIT TARGET: a labeled five-mood liuli planet comparison sheet.
+Make one precise revision: REMOVE the angry mood entirely, including its red thunder planet and the Chinese label 生气. Preserve the other FOUR mood artworks, their weather symbols, translucent glass material, colors, trees, rivers and Chinese typography without redesigning them.
+
+Rearrange the remaining four planets into a balanced TWO-BY-TWO square comparison sheet on the same pale warm cream background. Upper left: golden sunny planet with sun, labeled exactly "开心". Upper right: jade-green calm planet with clear still water, labeled exactly "平静". Lower left: blue rainy planet with visible rain cloud and falling raindrops, labeled exactly "低落". Lower right: lavender moonlit planet with crescent moon and resting cloud, labeled exactly "疲惫".
+
+Exactly FOUR complete planets and FOUR labels. No other moods, no duplicate planet, no red thunder planet, no lightning, no extra text. Each planet is the same size, fully inside the canvas, with generous padding and its label directly below in large readable dark-navy Chinese sans serif. Preserve the existing art rather than inventing new illustrations. No phone frame, UI, cards, divider, watermark or decorations. Square high-resolution output, ideally 1536x1536.
